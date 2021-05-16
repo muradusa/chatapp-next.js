@@ -19,7 +19,7 @@ export default function Home() {
               Sign out
             </button>
             <h1>{session?.user.name}</h1>
-            <Image src={session?.user.image} width={300} height={300} />
+            <Image src={session?.user.image} width={100} height={100} />
           </div>
         ) : (
           <div>
