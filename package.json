@@ -12,7 +12,9 @@
     "next": "10.2.0",
     "next-auth": "^3.23.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "stream-chat": "^3.11.0",
+    "stream-chat-react": "^6.0.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",

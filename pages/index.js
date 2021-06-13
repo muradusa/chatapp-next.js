@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { signIn, signOut, useSession } from "next-auth/client";
+import App from "../components/App";
 
 export default function Home() {
   const [session, loading] = useSession();
@@ -14,13 +15,14 @@ export default function Home() {
       </Head>
       <div className="">
         {session ? (
-          <div>
-            <button className="" onClick={() => signOut()}>
-              Sign out
-            </button>
-            <h1>{session?.user.name}</h1>
-            <Image src={session?.user.image} width={100} height={100} />
-          </div>
+          // <div>
+          //   <button className="" onClick={() => signOut()}>
+          //     Sign out
+          //   </button>
+          //   <h1>{session?.user.name}</h1>
+          //   <Image src={session?.user.image} width={100} height={100} />
+          // </div>
+          <App />
         ) : (
           <div>
             <button onClick={() => signIn()}>Sign in</button>
